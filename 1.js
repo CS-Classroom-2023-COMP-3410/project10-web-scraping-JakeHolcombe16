@@ -21,7 +21,7 @@ axios.get(LINK)
       }
     });
 
-    fs.writeFileSync('courses.json', JSON.stringify(courses, null, 2));
+    fs.writeFileSync('results/courses.json', JSON.stringify(courses, null, 2));
     console.log('Courses saved to courses.json');
   })
   .catch(error => {
